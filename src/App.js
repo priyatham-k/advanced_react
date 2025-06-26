@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
 import './App.css';
 
 function App() {
+  // This function returns what will be shown on screen
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello! My name is Jack</p>
+      <p>I am learning React development</p>
+      <p>I am learning React development</p>
     </div>
   );
 }
 
+// Export so other files can use this component
 export default App;
