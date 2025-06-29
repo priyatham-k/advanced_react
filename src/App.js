@@ -1,15 +1,19 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-
+import { useRef } from 'react';
 function App() {
   // This function returns what will be shown on screen
+  const inputRef = useRef(null); // input element pointing variable
+  function focusField() {
+    inputRef.current.focus(); // DOM method తో focus చేయటం
+  }
   return (
     <div className="App">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hello! My name is Jack</p>
-      <p>I am learning React development</p>
-      <p>I am learning React development</p>
+      <div>
+      <input ref={inputRef} /> {/* ref attribute తో DOM కు attach */}
+      <button onClick={focusField}>Focus Input</button>
+    </div>
     </div>
   );
 }
