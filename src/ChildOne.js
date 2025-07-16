@@ -8,7 +8,7 @@ function ChildOne({ message, onMessageChange }) {
         type="text"
         value={message}
         onChange={(e) => onMessageChange(e.target.value)}
-        placeholder="Type message here"
+        placeholder="text here"
       />
     </div>
   );
